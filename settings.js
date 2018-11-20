@@ -8,5 +8,5 @@ exports.dbConfig = {
   port:1433
 }
 
-exports.HTTPport = 2000
+exports.HTTPport = 1337
 exports.httpResponseFormat = constants.formats.json
