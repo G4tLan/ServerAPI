@@ -1,8 +1,9 @@
+
+console.log("app beginning")
 var http = require("http")
 //require students controller
 var building = require("../controllers/studentController")
 settings = require("../settings")
-console.log("app beginning")
 
 var port =  process.env.PORT
 console.log("port is " + port)
