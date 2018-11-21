@@ -2,9 +2,10 @@ var http = require("http")
 //require students controller
 var building = require("../controllers/studentController")
 settings = require("../settings")
+console.log("app beginning")
 
-
-var port =  process.env.PORT || settings.HTTPport
+var port =  process.env.PORT
+console.log("port is " + port)
 http.createServer(function (req, res) {
     switch(req.method){
         case "GET":
@@ -45,6 +46,4 @@ http.createServer(function (req, res) {
             break
     }
 
-}).listen(port, function(){
-    console.log("running on port "+ settings.HTTPport)
-})
+}).listen(port)
