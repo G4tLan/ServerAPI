@@ -1,1 +1,2 @@
-require("./core/server")
+//require("./core/server")
+console.log("in app ")
