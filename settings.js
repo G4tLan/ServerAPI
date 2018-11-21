@@ -5,7 +5,10 @@ exports.dbConfig = {
   database: "up_app",
   user: "uplifted",
   password: "UP_lifted",
-  port:1433
+  port:1433,
+   options: {
+       encrypt: true
+   }
 }
 
 exports.HTTPport = 1337
