@@ -12,7 +12,9 @@ http.createServer(function (req, res) {
         case "GET":
             
             if(req.url === '/'){
-                console.log("Root or Home")
+                 res.writeHead(200, "Home", {"Content-Type":"text/html"})
+                 res.write("<html><head><title>500</title></head><body><h1>You home</h1><p>on the net</p></body></html>")
+                res.end()
             } else if(req.url === '/getLibraries'){
                 building.getLibraries(req,res)
             }else if(req.url === '/getDiningHalls'){
