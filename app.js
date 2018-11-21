@@ -1,2 +1,3 @@
-//require("./core/server")
 console.log("in app ")
+require("./core/server")
+
